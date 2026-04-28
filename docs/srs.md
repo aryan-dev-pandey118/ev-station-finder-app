@@ -6,25 +6,19 @@ EV users face range anxiety because of partial station information, insufficient
 ## Scope
 The system allows users to find EV charging stations, provide them with details, filter, and use a map interface to navigate. It can work via the web browsers and depends on external APIs and GPS services to obtain data. The system is not in control of physical charging infrastructure.
 ## Definitions, Acronyms, and Abbreviations
-Term
+### Glossary of Terms
 
-Definition
+| Term  | Definition                          |
+| ----- | ----------------------------------- |
+| SRS   | Software Requirements Specification |
+| API   | Application Programming Interface   |
+| GPS   | Global Positioning System           |
+| UI/UX | User Interface / User Experience    |
+| FR    | Functional Requirement              |
+| NFR   | Non-Functional Requirement          |
+| OCM   | Open Charge Map                     |
+| OSM   | OpenStreetMap                       |
 
-SRS Software Requirement Specification
-
-API Application Programming interface
-
-GPSGlobal positioning System
-
-UI/UX User Interface/ User Experience
-
-FR Functional Requirement
-
-NFR Nonfunctional Requirement
-
-OCM Open charge Map
-
-OSM Open Street Map
 
  
  
@@ -211,65 +205,69 @@ The EV Charging Station Finder application employs a contemporary MERN stack arc
 
 
 ## Architecture Layers
-Client Layer (Frontend)
+### Client Layer (Frontend)
 
-The frontend is built using React.js + Tailwind CSS and includes:
-• Interactive map (Mapbox)
-• User dashboard
-• Filters and search UI
-• Notifications interface
-API Gateway Layer:
+Built using React.js and Tailwind CSS.
 
-This layer is implemented with Express.js and includes:
+Responsible for:
 
-• JWT middleware for authentication
-• Rate limiting to prevent abuse
-• CORS and Helmet for security
-• REST endpoints and Socket.io server
- 
-Service Layer (Business Logic):
+* Interactive Map (Mapbox GL JS)
+* User dashboard and profile management
+* Search and filtering interface
+* Notification UI (in-app alerts)
 
-The core logic is separated into dedicated services for better maintainability:
-• Auth Service: Handles JWT tokens, Bcrypt password hashing, and role-based guards
-• Route Service: Uses Map box Directions API and handles charging stops
-• EV Range Calculator Service: Calculates battery usage, cost, and travel time
-Data Layer
+---
 
-• MongoDB + Mongoose ODM is used as the primary database to store:
-à Users, Charging Stations, Routes, Vehicles, Favorites, and Notifications
-• Redis is used for caching sessions and frequent API responses to improve performance and reduce external API calls.
-External APIs & Integrations
+### API Gateway Layer
 
-The system integrates with several external services:
-• Open Charge Map API – for charging station data
-• Mapbox API – for map rendering and directions
-• Nodemailer / Socket.IO – for email and push notifications
+Implemented using Express.js.
+
+Responsible for:
+
+* JWT-based authentication middleware
+* Rate limiting for API protection
+* Security middleware (CORS, Helmet)
+* REST API endpoints
+* Real-time communication via Socket.IO
+
+---
+
+### Service Layer (Business Logic)
+
+Contains core application logic separated into modular services:
+
+* **Auth Service**: JWT generation/validation, bcrypt password hashing, role-based access control
+* **Route Service**: Integration with Mapbox Directions API and charging stop optimization logic
+* **EV Range Service**: Battery consumption estimation, travel time calculation, and cost estimation
+
+---
+
+### Data Layer
+
+* MongoDB (with Mongoose ODM): Stores Users, Charging Stations, Routes, Vehicles, Favorites, Notifications
+* Redis: Used for session caching, API response caching, and rate-limit optimization
+
+---
+
+### External APIs & Integrations
+
+* Open Charge Map API: Charging station data source
+* Mapbox API: Map rendering, geocoding, and routing
+* Nodemailer + Socket.IO: Email notifications and real-time user alerts
+
  
 # User Interface Design
-9.1 Story Board
-​​Screen
+## Story Board
+### Application Screens
 
-​​Description
+| Screen             | Description                                                                                                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Landing / Map View | Full-screen interactive map centered on user location. Includes search bar (top), color-coded charging station markers, and bottom navigation (Map, Search, Favorites, Profile).                          |
+| Search Results     | Map zooms to selected location. Displays station markers with summary cards (name, distance, availability status). Supports toggle between map and list view.                                             |
+| Route Planner      | Allows destination input and displays suggested charging stops based on vehicle range. Users can add/remove/swap stops. Shows route summary including distance, time, charging stops, and estimated cost. |
+| User Profile       | Allows users to update personal details, vehicle information, notification settings, favourites, password, MFA settings, and account deletion.                                                            |
+| Admin Dashboard    | Contains tabs for User Management, Station Management, and System Analytics (usage statistics, popular stations, search trends).                                                                          |
 
-1. Landing/Map View
-
-Full-screen map centred on user location; search bar at top; color-coded station markers; bottom navigation (Map, Search, Favorites, Profile)
-
-2. Search Results
-
-Map zooms to target area; station markers with summary cards (name, distance, status); list view toggle available
-
-3. Route Planner
-
-Destination input; suggested charging stops; add/remove/swap stops; summary: distance, time, charging stops, cost
-
-4. User Profile
-
-Edit name, email, vehicle details, notification preferences; manage favourites; change password, enable MFA, delete account
-
-5. Admin Dashboard
-
-Tabs: User Management, Station Management, System Analytics (usage charts, popular stations, search trends)
 
  
 ## Input Data Forms
