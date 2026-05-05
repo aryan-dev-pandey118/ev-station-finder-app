@@ -7,3 +7,6 @@ A responsive web application for finding EV charging stations across Australia, 
 - [Software Requirements Specification (SRS)](docs/srs.md)
 - [Market Research](docs/market-research.md)
 - [Problem Statement](docs/problem-statement.md)
+- [Architecture Design Report](docs/ArchitectureDesign.md)
+- [Database design and API Design](docs/DatabaseAndAPIDesign.md)
+
