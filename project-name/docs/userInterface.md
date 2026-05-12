@@ -14,7 +14,7 @@ The key objectives of the UI/UX design are:
 •	Improve user experience with clear visual feedback 
 
 # User Navigation Flow
-3.1 Guest User Flow
+## Guest User Flow
 Open Application
         ↓
 View Interactive Map
