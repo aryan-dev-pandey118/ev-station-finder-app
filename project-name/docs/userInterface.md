@@ -5,13 +5,14 @@ The goal for this phase is to create the User Interface (UI) and User Experience
 UI/UX Design has been created based on the requirement mentioned in Software Requirements Specification (SRS). Design is focused on accessibility and usability for EV users across mobile, tablet and desktop devices, as well as their ease of navigation.
 # UI/UX Design Objectives
 The key objectives of the UI/UX design are:
-•	Create a simple and modern interface 
-•	Ensure fast and easy navigation 
-•	Reduce user interaction complexity 
-•	Provide real-time charging station visibility 
-•	Support responsive design across all devices 
-•	Maintain accessibility standards (WCAG 2.1) 
-•	Improve user experience with clear visual feedback 
+
+- Create a simple and modern interface  
+- Ensure fast and easy navigation  
+- Reduce user interaction complexity  
+- Provide real-time charging station visibility  
+- Support responsive design across all devices  
+- Maintain accessibility standards (WCAG 2.1)  
+- Improve user experience with clear visual feedback  
 
 # User Navigation Flow
 ## Guest User Flow
@@ -60,49 +61,49 @@ Screen	Description
 Screen Description
 The landing screen is the primary dashboard of the application. It displays an interactive map with nearby charging stations and allows users to search, filter, and navigate.
 Main Features
-•	Interactive map interface 
-•	Charging station markers 
-•	Search functionality 
-•	Filter options 
-•	Real-time availability status 
-•	Bottom/side navigation menu 
+- Interactive map interface 
+- Charging station markers 
+- Search functionality 
+- Filter options 
+- Real-time availability status 
+- Bottom/side navigation menu 
 
  
 ## Create Account Screen
 Screen Description
 The Create Account screen allows new users to register for the application.
 Main Features
-•	User registration form 
-•	Password validation 
-•	Terms and conditions checkbox 
-•	Navigation to Sign In page 
+- User registration form
+- Password validation
+- Terms and conditions checkbox
+- Navigation to Sign In page 
  
 ## Sign In Screen
 Screen Description
 The Sign In screen enables users to securely access their accounts.
 Main Features
-•	Email and password login 
-•	Remember me option 
-•	Forgot password option 
-•	Secure authentication 
+- Email and password login
+- Remember me option
+- Forgot password option
+- Secure authentication 
  
 ## Route Planner Screen
 Screen Description
 The Route Planner screen helps users plan trips with charging stops.
 Main Features
-•	Destination search 
-•	Charging stop suggestions 
-•	Distance and time estimation 
-•	Route optimisation 
+- Destination search
+- Charging stop suggestions
+- Distance and time estimation
+- Route optimisation 
  
 ## Charging Calculator Screen
 Screen Description
 The Charging Calculator estimates charging duration and cost.
 Main Features
-•	Battery percentage calculation 
-•	Charging speed input 
-•	Cost estimation 
-•	Charging duration estimation 
+- Battery percentage calculation
+- Charging speed input
+- Cost estimation
+- Charging duration estimation 
 
 # Colour Notation System
 The system uses colour-coded indicators to improve usability and allow users to quickly identify charging station status and provider types.
@@ -118,14 +119,14 @@ The system uses colour-coded indicators to improve usability and allow users to 
 
 # Responsive Design Strategy
 The application is designed to support:
-•	Mobile devices 
-•	Tablets 
-•	Desktop screens 
+- Mobile devices
+- Tablets
+- Desktop screens 
 Responsive Features
-•	Flexible layouts 
-•	Mobile bottom navigation 
-•	Adaptive map resizing 
-•	Responsive cards and menus 
+- Flexible layouts
+- Mobile bottom navigation
+- Adaptive map resizing
+- Responsive cards and menus 
 # UI Components
 | Component | Purpose |
 |-----------|---------|
@@ -140,13 +141,13 @@ Responsive Features
 
 # UI/UX Design Principles
 The UI/UX design follows these principles:
-•	Simple and intuitive design 
-•	Minimal user interaction steps 
-•	Accessibility compliance 
-•	Consistent visual hierarchy 
-•	Responsive design 
-•	Clear navigation structure 
-•	Fast user interaction 
+- Simple and intuitive design
+- Minimal user interaction steps
+- Accessibility compliance
+- Consistent visual hierarchy
+- Responsive design
+- Clear navigation structure
+- Fast user interaction 
 
 # Conclusion
 The EV Charging Station Finder system has a user-friendly, responsive, and modern user interface and user experience. The Purposeful prototype and screens enable the user to easily locate charging stations, establish charging route, view charging costs and manage their account. The interface ensures that it can be easily scaled and expanded for future growth and improvement, without compromising accessibility or usability.
