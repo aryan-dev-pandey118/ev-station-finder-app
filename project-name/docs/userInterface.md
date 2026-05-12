@@ -116,7 +116,7 @@ The system uses colour-coded indicators to improve usability and allow users to 
 | Yellow | Other Networks              |
 | Grey | Out of Range                 |
 
-7. Responsive Design Strategy
+# Responsive Design Strategy
 The application is designed to support:
 •	Mobile devices 
 •	Tablets 
@@ -126,18 +126,19 @@ Responsive Features
 •	Mobile bottom navigation 
 •	Adaptive map resizing 
 •	Responsive cards and menus 
-8. UI Components
-Component	Purpose
-Search Bar	Search stations and locations
-Map Marker	Display charging stations
-Filter Panel	Filter charging stations
-Navigation Menu	User navigation
-Station Cards	Display charging station details
-Route Summary Card	Show route details
-Calculator Form	Calculate charging cost/time
-Notification Popup	Display alerts
+# UI Components
+| Component | Purpose |
+|-----------|---------|
+| Search Bar | Search stations and locations |
+| Map Marker | Display charging stations |
+| Filter Panel | Filter charging stations |
+| Navigation Menu | User navigation |
+| Station Cards | Display charging station details |
+| Route Summary Card | Show route details |
+| Calculator Form | Calculate charging cost/time |
+| Notification Popup | Display alerts |
 
-9. UI/UX Design Principles
+# UI/UX Design Principles
 The UI/UX design follows these principles:
 •	Simple and intuitive design 
 •	Minimal user interaction steps 
@@ -147,7 +148,7 @@ The UI/UX design follows these principles:
 •	Clear navigation structure 
 •	Fast user interaction 
 
-10. Conclusion
+# Conclusion
 The EV Charging Station Finder system has a user-friendly, responsive, and modern user interface and user experience. The Purposeful prototype and screens enable the user to easily locate charging stations, establish charging route, view charging costs and manage their account. The interface ensures that it can be easily scaled and expanded for future growth and improvement, without compromising accessibility or usability.
 
 	
