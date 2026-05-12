@@ -16,17 +16,18 @@ The key objectives of the UI/UX design are:
 
 # User Navigation Flow
 ## Guest User Flow
-Open Application
-        ↓
-View Interactive Map
-        ↓
-Search Charging Station
-        ↓
-View Station Details
-        ↓
-Sign In / Create Account
+- Open Application  
+  ↓  
+- View Interactive Map  
+  ↓  
+- Search Charging Station  
+  ↓  
+- View Station Details  
+  ↓  
+- Sign In / Create Account  
 
 ## Registered User Flow
+```
 Sign In
     ↓
 Map Dashboard
@@ -40,6 +41,7 @@ Plan Route
 Calculate Charging Cost
     ↓
 Save Favourite Stations
+```
 
 # Main Screens of the System
 The EV Charging Station Finder system contains the following major screens:
