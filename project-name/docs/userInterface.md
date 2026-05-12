@@ -13,7 +13,7 @@ The key objectives of the UI/UX design are:
 •	Maintain accessibility standards (WCAG 2.1) 
 •	Improve user experience with clear visual feedback 
 
-3. User Navigation Flow
+# User Navigation Flow
 3.1 Guest User Flow
 Open Application
         ↓
