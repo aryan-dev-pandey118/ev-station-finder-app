@@ -40,7 +40,7 @@ Calculate Charging Cost
     ↓
 Save Favourite Stations
 
-4. Main Screens of the System
+# Main Screens of the System
 The EV Charging Station Finder system contains the following major screens:
 Screen	Description
 Landing / Map Screen	Displays charging stations on an interactive map
