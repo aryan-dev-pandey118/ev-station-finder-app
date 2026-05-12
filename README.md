@@ -9,4 +9,4 @@ A responsive web application for finding EV charging stations across Australia, 
 - [Problem Statement](docs/problem-statement.md)
 - [Architecture Design Report](docs/ArchitectureDesign.md)
 - [Database design and API Design](docs/DatabaseAndAPIDesign.md)
-
+- [User interface design](docs/UIAndUXDesign.md)
