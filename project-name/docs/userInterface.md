@@ -25,7 +25,7 @@ View Station Details
         ↓
 Sign In / Create Account
 
-3.2 Registered User Flow
+## Registered User Flow
 Sign In
     ↓
 Map Dashboard
