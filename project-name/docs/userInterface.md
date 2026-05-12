@@ -41,18 +41,20 @@ Calculate Charging Cost
 Save Favourite Stations
 
 # Main Screens of the System
-|The EV Charging Station Finder system contains the following major screens:
+The EV Charging Station Finder system contains the following major screens:
 Screen	Description
-|Landing / Map Screen |	Displays charging stations on an interactive map|
-Search Results Screen	Shows filtered charging stations
-Station Detail Screen	Displays detailed charging station information
-Route Planner Screen	Allows users to plan charging routes
-Charging Calculator Screen	Calculates charging cost and charging time
-Create Account Screen	New user registration
-Sign In Screen	User authentication
-User Profile Screen	Manage profile and vehicle information
-Favorites Screen	View saved stations
-Admin Dashboard	Manage users and charging stations
+| Screen Name                  | Description                                              |
+|-------------------------------|----------------------------------------------------------|
+| Landing / Map Screen          | Displays charging stations on an interactive map         |
+| Search Results Screen         | Shows filtered charging stations                         |
+| Station Detail Screen         | Displays detailed charging station information           |
+| Route Planner Screen          | Allows users to plan charging routes                     |
+| Charging Calculator Screen    | Calculates charging cost and charging time               |
+| Create Account Screen         | New user registration                                    |
+| Sign In Screen                | User authentication                                      |
+| User Profile Screen           | Manage profile and vehicle information                   |
+| Favorites Screen              | View saved stations                                      |
+| Admin Dashboard               | Manage users and charging stations                       |
 
 ## Landing / Interactive Map Screen
 Screen Description
