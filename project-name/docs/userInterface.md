@@ -3,7 +3,7 @@
 # Introduction
 The goal for this phase is to create the User Interface (UI) and User Experience (UX) design for the EV Charging Station Finder system. The design aims to provide a user-friendly, responsive and visually cohesive interface that would allow users to easily find charging stations, route planning, charging cost calculation and account management.
 UI/UX Design has been created based on the requirement mentioned in Software Requirements Specification (SRS). Design is focused on accessibility and usability for EV users across mobile, tablet and desktop devices, as well as their ease of navigation.
-2. UI/UX Design Objectives
+# UI/UX Design Objectives
 The key objectives of the UI/UX design are:
 •	Create a simple and modern interface 
 •	Ensure fast and easy navigation 
