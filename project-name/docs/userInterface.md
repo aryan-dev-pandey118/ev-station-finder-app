@@ -16,6 +16,7 @@ The key objectives of the UI/UX design are:
 
 # User Navigation Flow
 ## Guest User Flow
+```
 - Open Application  
   ↓  
 - View Interactive Map  
@@ -24,7 +25,8 @@ The key objectives of the UI/UX design are:
   ↓  
 - View Station Details  
   ↓  
-- Sign In / Create Account  
+- Sign In / Create Account
+```
 
 ## Registered User Flow
 ```
