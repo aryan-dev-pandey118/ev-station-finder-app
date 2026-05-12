@@ -67,9 +67,8 @@ Main Features
 •	Real-time availability status 
 •	Bottom/side navigation menu 
 
-Screenshot
  
-5.2 Create Account Screen
+## Create Account Screen
 Screen Description
 The Create Account screen allows new users to register for the application.
 Main Features
@@ -77,10 +76,8 @@ Main Features
 •	Password validation 
 •	Terms and conditions checkbox 
 •	Navigation to Sign In page 
-
-Screenshot
  
-5.3 Sign In Screen
+## Sign In Screen
 Screen Description
 The Sign In screen enables users to securely access their accounts.
 Main Features
@@ -88,9 +85,8 @@ Main Features
 •	Remember me option 
 •	Forgot password option 
 •	Secure authentication 
-Screenshot
  
-5.4 Route Planner Screen
+## Route Planner Screen
 Screen Description
 The Route Planner screen helps users plan trips with charging stops.
 Main Features
@@ -98,10 +94,8 @@ Main Features
 •	Charging stop suggestions 
 •	Distance and time estimation 
 •	Route optimisation 
-
-Screenshot
  
-5.5 Charging Calculator Screen
+## Charging Calculator Screen
 Screen Description
 The Charging Calculator estimates charging duration and cost.
 Main Features
@@ -109,19 +103,18 @@ Main Features
 •	Charging speed input 
 •	Cost estimation 
 •	Charging duration estimation 
-Screenshot
- 
 
-6. Colour Notation System
+# Colour Notation System
 The system uses colour-coded indicators to improve usability and allow users to quickly identify charging station status and provider types.
-Colour	Meaning
-Green	Recommended / Available
-Purple	Chargefox
-Blue	Evie Networks
-Red	Tesla
-Orange	NRMA
-Yellow	Other Networks
-Grey	Out of Range
+| Colour | Meaning                     |
+|--------|-----------------------------|
+| Green | Recommended / Available      |
+| Purple | Chargefox                   |
+| Blue | Evie Networks                |
+| Red | Tesla                         |
+| Orange | NRMA                        |
+| Yellow | Other Networks              |
+| Grey | Out of Range                 |
 
 7. Responsive Design Strategy
 The application is designed to support:
