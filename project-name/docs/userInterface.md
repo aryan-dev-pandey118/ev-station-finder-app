@@ -54,10 +54,7 @@ User Profile Screen	Manage profile and vehicle information
 Favorites Screen	View saved stations
 Admin Dashboard	Manage users and charging stations
 
-5. Wireframes and Screen Designs
-Prototype:
- 
-5.1 Landing / Interactive Map Screen
+## Landing / Interactive Map Screen
 Screen Description
 The landing screen is the primary dashboard of the application. It displays an interactive map with nearby charging stations and allows users to search, filter, and navigate.
 Main Features
