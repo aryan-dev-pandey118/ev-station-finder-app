@@ -73,6 +73,7 @@ Real-time notifications sent through Socket.IO. The unread count badge is indica
 All components are designed to work for screen sizes between 320px and 2560px (NFR-10) via Tailwind CSS breakpoint utilities. Works on Chrome, Firefox, Safari, Edge and iOS 14+, Android 10+.
 
 | Breakpoint |     Width       |                    Layout                    |
+|------------|-----------------|----------------------------------------------|
 | Mobile     |320px - 767px    | Single-column; hamburger menu; full-width map|
 | Tablet     |768px - 1023px   | Two column; expanded filter panel            |
 | Desktop    |1024px+          | Full Navbar; split-view map and station list |
