@@ -8,6 +8,7 @@ This section records the user interface features created on the front-end during
 ## Components Overview
 
 | Component               | Screen / Module      |     Status |
+|-------------------------|----------------------|------------|
 | Navbar                  |   All Pages          |Implemented |
 | Login / Sign-Up Page    | Authentication       |Implemented |
 | Interactive Map View    | Map Screen           |Implemented |
