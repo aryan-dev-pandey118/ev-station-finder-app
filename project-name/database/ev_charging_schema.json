@@ -1,0 +1,111 @@
+{
+  "database": "MongoDB Atlas (capstoneDB)",
+  "note": "This app uses MongoDB (NoSQL). The schema below describes the structure of each collection.",
+
+  "collections": {
+    "users": {
+      "description": "Stores registered user accounts",
+      "fields": {
+        "_id": "ObjectId (auto)",
+        "name": "String, required",
+        "email": "String, required, unique",
+        "password": "String, hashed (bcrypt)",
+        "role": "String, enum: ['user', 'admin'], default: 'user'",
+        "favourites": ["ObjectId → ChargingStation"],
+        "vehicles": ["ObjectId → Vehicle"],
+        "resetPasswordToken": "String",
+        "resetPasswordExpire": "Date",
+        "createdAt": "Date",
+        "updatedAt": "Date"
+      }
+    },
+
+    "chargingstations": {
+      "description": "EV charging station locations and metadata",
+      "fields": {
+        "_id": "ObjectId (auto)",
+        "name": "String, required",
+        "provider": "String (e.g. Chargefox, Evie, Tesla)",
+        "address": "String",
+        "location": {
+          "type": "String, 'Point'",
+          "coordinates": "[longitude, latitude]  — 2dsphere index"
+        },
+        "connectorTypes": ["String (Type2, CCS2, CHAdeMO, Tesla)"],
+        "powerOutput": "Number (kW)",
+        "numberOfPorts": "Number",
+        "status": "String, enum: ['available','busy','offline']",
+        "operatingHours": "String",
+        "amenities": ["String"],
+        "rating": "Number (0-5)",
+        "reviewCount": "Number",
+        "createdAt": "Date",
+        "updatedAt": "Date"
+      },
+      "indexes": ["location (2dsphere)", "name (text)", "provider (text)"]
+    },
+
+    "vehicles": {
+      "description": "User's saved EV vehicles",
+      "fields": {
+        "_id": "ObjectId (auto)",
+        "owner": "ObjectId → User",
+        "make": "String (e.g. Tesla)",
+        "model": "String (e.g. Model 3)",
+        "year": "Number",
+        "batteryCapacity": "Number (kWh)",
+        "range": "Number (km)",
+        "connectorType": "String",
+        "createdAt": "Date"
+      }
+    },
+
+    "routes": {
+      "description": "Saved route plans with waypoints",
+      "fields": {
+        "_id": "ObjectId (auto)",
+        "user": "ObjectId → User",
+        "origin": "String",
+        "destination": "String",
+        "waypoints": ["ObjectId → ChargingStation"],
+        "totalDistance": "Number (km)",
+        "estimatedTime": "Number (minutes)",
+        "createdAt": "Date"
+      }
+    },
+
+    "notifications": {
+      "description": "In-app notifications for users",
+      "fields": {
+        "_id": "ObjectId (auto)",
+        "user": "ObjectId → User",
+        "message": "String",
+        "type": "String (info, warning, alert)",
+        "read": "Boolean, default: false",
+        "createdAt": "Date"
+      }
+    },
+
+    "reports": {
+      "description": "User-submitted issue reports for stations",
+      "fields": {
+        "_id": "ObjectId (auto)",
+        "station": "ObjectId → ChargingStation",
+        "reportedBy": "ObjectId → User",
+        "issue": "String",
+        "status": "String (pending, resolved)",
+        "createdAt": "Date"
+      }
+    }
+  },
+
+  "relationships": {
+    "User → Vehicle": "One-to-many (a user can have multiple vehicles)",
+    "User → ChargingStation": "Many-to-many via favourites array",
+    "User → Route": "One-to-many (a user can save multiple routes)",
+    "Route → ChargingStation": "Many-to-many via waypoints array",
+    "User → Notification": "One-to-many",
+    "User → Report": "One-to-many",
+    "Report → ChargingStation": "Many-to-one"
+  }
+}
